@@ -1,0 +1,200 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a ui-sref="app">
+                        <span class="glyphicon glyphicon-home"
+                              aria-hidden="true"></span> Home</a></li>
+                <li><a ui-sref="app.aboutus">
+                        <span class="glyphicon glyphicon-info-sign"
+                              aria-hidden="true"></span> About</a></li>
+                <li><a ui-sref="app.menu">
+                         <span class="glyphicon glyphicon-list-alt"
+                               aria-hidden="true"></span>
+                    Menu</a></li>
+                <li><a ui-sref="app.contactus">
+                    <i class="fa fa-envelope-o"></i> Contact</a></li>
+                <li><a ui-sref="app.share">
+                    <i class="glyphicon glyphicon glyphicon-share"></i> Share Wall</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a  type="button" data-toggle="modal" data-target="#loginModal">
+                    <span class="glyphicon glyphicon-log-in" > Login</span>
+                </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <div class="form-group col-sm-offset-4">
+                        <label class="sr-only" for="email">Email address</label>
+                        <input type="email" id="email" class="form-control input-sm" placeholder="Email" style="width: 200px">
+                    </div>
+                    <div class="form-group col-sm-offset-4">
+                        <label class="sr-only" for="password">Password</label>
+                        <input style="width: 200px" type="password" id="password" class="form-control input-sm" placeholder="Password">
+                    </div>
+                    <div class="checkbox col-sm-offset-4">
+                        <label>
+                            <input type="checkbox">Remember Me
+                        </label>
+                    </div>
+                    <div class="col-sm-offset-4">
+                        <button type="submit" class="btn btn-info btn-sm">Sign in</button>
+                        <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="jumbotron">
+
+    <!-- Main component for a primary marketing message or call to action -->
+
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-xs-12 col-sm-8">
+                <h1>Ristorante con Fusion</h1>
+                <p style="padding:40px;"></p>
+                <p>We take inspiration from the World's best cuisines, and create
+                    a unique fusion experience. Our lipsmacking creations will
+                    tickle your culinary senses!</p>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <p style="padding:20px;"></p>
+                <img src="images/logo1.png" class="img-responsive"style="width: 150px" >
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <p style="padding: 40px;"></p>
+                <a type="button" class="btn btn-warning btn-sm btn-block "data-toggle="modal" data-target="#reserveform">
+                    Reserve Table
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="reserveform" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <h4 class="modal-title">Reserve a Table</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row form-horizontal">
+                    <label class="col-sm-2 control-label">Number of Guests
+                    </label>
+                    <form role="form">
+                        <div class="col-xs-5 col-sm-10">
+                            <div class="form-group form-horizontal">
+                                <div class="col-sm-12">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3"> 4
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option3"> 5
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3"> 6
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-group row form-horizontal">
+                    <label class="col-sm-2 control-label">
+                        Section
+                    </label>
+                    <form role="form">
+                        <div class="col-sm-10">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="option1">Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="option2">Smoking
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-group row form-horizontal">
+                    <label class="col-sm-2 control-label">
+                        Data and Time
+                    </label>
+                    <form role="form">
+                        <div class="col-xs-5 col-sm-10">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" placeholder="Date" />
+                                        <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" >
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Time" class="form-control">
+                                        <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span><!-- form-control-feedback意思是在本文后面加个图标-->
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button class="btn btn-primary">Reserve</button>
+                                    <button class="btn btn-default " data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="col-sm-12 alert alert-warning alert-dismissable" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Warning:</strong> Please <strong>call </strong>us to reserve for more than six guests.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+ <ion-view view-title="About Us">
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">
+       <h2>Our History</h2>
+      </div>
+      <div class="item item-text-wrap item-body">
+        <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+        <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        <h2>Corporate Leadership</h2>
+      </div>
+      <div class="list">
+        <ion-item ng-repeat="leader in leaders" class="item-avatar item-text-wrap">
+          <img ng-src="{{baseURL+leader.image}}">
+          <h2>{{leader.name}}<br>
+            <h5>{{leader.designation}}</h5>
+          </h2>
+          <p>{{leader.description}}</p>
+        </ion-item>
+        <!--<a class="item item-avatar" href="#" ng-repeat="leader in leadership">-->
+          <!--<images ng-src="{{baseURL+leader.image}}">-->
+          <!--<h2></h2>-->
+          <!--<p>Back off, man. I'm a scientist.</p>-->
+        <!--</a>-->
+
+
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
